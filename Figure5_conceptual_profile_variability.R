@@ -240,8 +240,7 @@ ggsave(
   p,
   width = 135,
   height = 90,
-  units = "mm",
-  device = cairo_pdf
+  units = "mm"
 )
 
 ggsave(
