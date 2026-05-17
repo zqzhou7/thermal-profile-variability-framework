@@ -1,27 +1,36 @@
 # Conceptual Figure 5: thermal exposure profiles and physiological variability
 
+<p align="center">
+
+  <img src="Figure5_conceptual_profile_variability.png" width="750">
+
+</p>
+
 This repository contains the R code used to generate Figure 5 for a manuscript on thermal exposure patterns and physiological plasticity in the sea urchin *Heliocidaris crassispina*.
 
 ## Purpose
 
-Figure 5 is a conceptual framework illustrating how cumulative thermal challenge and temporal variability may shape mean metabolic performance and inter-individual physiological variability.
+Figure 5 presents a conceptual framework illustrating how cumulative thermal challenge and temporal variability may shape both mean metabolic performance and inter-individual physiological variability.
 
-The solid line represents a conceptual average metabolic response. The shaded ribbon represents variation among individuals within the population. The ribbon is not a confidence interval around the mean.
+The solid line represents a conceptual average metabolic response, while the shaded ribbon represents variation among individuals within the population. The ribbon does not represent confidence intervals around the mean.
 
 ## Conceptual interpretation
 
-The figure summarizes four conceptual regions:
+The framework summarizes four conceptual regions:
 
 1. **Low thermal challenge** — physiological responses remain relatively constrained under moderate conditions.
-2. **Metabolic adjustment** — individuals upregulate metabolic activity as cumulative thermal challenge increases.
+
+2. **Metabolic adjustment** — individuals increasingly upregulate metabolic activity as cumulative thermal challenge rises.
+
 3. **Amplified variability** — temporally variable stress produces broader inter-individual physiological dispersion.
-4. **Physiological filtering** — variability contracts as tolerance limits are approached.
+
+4. **Physiological filtering** — variability contracts as physiological tolerance limits are approached.
 
 ## Data-informed component
 
-The mean curve remains conceptual. The variability ribbon is informed by observed Day 28 respiration-rate variability from the experiment.
+The mean response curve remains conceptual. However, the variability ribbon is informed by observed Day 28 respiration-rate variability measured across experimental thermal profiles.
 
-The script calculates coefficients of variation from profile-level respiration summaries:
+The script calculates coefficients of variation from respiration summaries:
 
 ```r
 cv = sd / mean
